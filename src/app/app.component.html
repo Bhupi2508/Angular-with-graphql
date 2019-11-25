@@ -1,5 +1,12 @@
-<div>
+<!-- <div>
   <label>Model: {{ data.paymentInstruction.instructionId }}</label>
   <label>Brand: {{ data.paymentInstruction.transactionId }}</label>
-</div>
-<router-outlet></router-outlet>
+</div> -->
+
+<div fxLayout="column" fxLayoutAlign="space-around center">
+  <div>Data : =>></div>
+  <div>InstructionId : {{data.paymentInstruction.instructionId}}</div>
+  <div>transactionId : {{data.paymentInstruction.transactionId}}</div>
+  <div>paymentMethod : {{data.paymentInstruction.paymentMethod}}</div>
+  <div>isAdhocAccFlag : {{data.paymentInstruction.isAdhocAccFlag}}</div>
+  <router-outlet></router-outlet>
